@@ -1,0 +1,203 @@
+/* Gumroad-style Neo-Brutalism Theme */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap');
+
+:root {
+  --primary: #ff90e8; /* Pink */
+  --secondary: #ffc900; /* Yellow */
+  --accent: #23a094; /* Teal */
+  --light-blue: #90c2e8;
+  --black: #000000;
+  --white: #ffffff;
+  --bg-color: #f4f4f0;
+  --border-width: 3px;
+  --shadow-offset: 6px;
+  --border-radius: 8px;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900 !important;
+  letter-spacing: -0.03em;
+}
+
+/* Base Neo-Brutalism Classes */
+.neo-box {
+  background-color: var(--white);
+  border: var(--border-width) solid var(--black);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0px 0px var(--black);
+  transition: all 0.2s ease-in-out;
+}
+
+.neo-box-hover:hover {
+  transform: translate(calc(var(--shadow-offset) * -0.5), calc(var(--shadow-offset) * -0.5));
+  box-shadow: calc(var(--shadow-offset) * 1.5) calc(var(--shadow-offset) * 1.5) 0px 0px var(--black);
+}
+
+/* Buttons */
+.button.is-neo {
+  background-color: var(--white);
+  border: var(--border-width) solid var(--black);
+  border-radius: var(--border-radius);
+  box-shadow: 4px 4px 0px 0px var(--black);
+  color: var(--black);
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 1.5rem 2rem;
+  transition: all 0.2s ease;
+}
+
+.button.is-neo:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px var(--black);
+  color: var(--black);
+}
+
+.button.is-neo:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px 0px var(--black) !important;
+}
+
+.button.is-neo.is-primary {
+  background-color: var(--primary);
+}
+.button.is-neo.is-secondary {
+  background-color: var(--secondary);
+}
+.button.is-neo.is-accent {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+/* Navbar */
+.navbar.is-neo {
+  background-color: var(--bg-color);
+  border-bottom: var(--border-width) solid var(--black);
+  padding: 0.5rem 0;
+}
+.navbar-brand .navbar-item {
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: -0.05em;
+}
+.navbar-menu .navbar-item {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.navbar-item:hover, .navbar-link:hover {
+  background-color: transparent !important;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
+/* Hero Section */
+.hero.is-neo-hero {
+  background-color: var(--secondary);
+  border-bottom: var(--border-width) solid var(--black);
+  position: relative;
+  overflow: hidden;
+}
+.hero-title {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+/* Services Section */
+.service-card {
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+.service-card .icon-box {
+  width: 60px;
+  height: 60px;
+  border: var(--border-width) solid var(--black);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--primary);
+}
+.service-card:nth-child(2n) .icon-box { background-color: var(--light-blue); }
+.service-card:nth-child(3n) .icon-box { background-color: var(--secondary); }
+
+/* How We Work Section */
+.step-card {
+  padding: 2rem;
+  background-color: var(--light-blue);
+  position: relative;
+}
+.step-number {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+/* Clients */
+.client-logo {
+  border: var(--border-width) solid var(--black);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  background-color: var(--white);
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/* Footer */
+.footer.is-neo {
+  background-color: var(--black);
+  color: var(--white);
+  border-top: var(--border-width) solid var(--black);
+  padding: 4rem 2rem;
+}
+.footer.is-neo a {
+  color: var(--primary);
+  font-weight: 600;
+}
+.footer.is-neo a:hover {
+  color: var(--secondary);
+}
+
+/* Utilities */
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.bg-pink { background-color: var(--primary); }
+.bg-yellow { background-color: var(--secondary); }
+.bg-teal { background-color: var(--accent); color: var(--white); }
+.bg-blue { background-color: var(--light-blue); }
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
