@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteAgensi | Jasa Pembuatan Website Profesional</title>
+    <meta name="description"
+        content="ByteAgensi adalah Web Development Agency profesional yang fokus pada layanan jasa pembuatan website dengan platform WordPress.">
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="/assets//images//ByteAgensi-facicon.ico">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="/assets/images/ByteAgensi-logo.png" class="mr-2" />
+                    <span>ByteAgensi</span>
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <div class="navbar-link-wrapper">
+                            <a href="layanan.html" class="navbar-link">
+                                    Layanan Kami
+                            </a>
+                            <span class="dropdown-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="navbar-dropdown">
+                            <a href="layanan.html" class="navbar-item">
+                                Website Company Profile
+                            </a>
+                            <a href="layanan.html" class="navbar-item">
+                                Website Landing Page
+                            </a>
+                            <a href="layanan.html" class="navbar-item">
+                                Website Katalog
+                            </a>
+                        </div>
+                    </div>
+                    <a href="harga.html" class="navbar-item">
+                        Harga &amp; Paket
+                    </a>
+                    <a href="portfolio.html" class="navbar-item">
+                        Portfolio
+                    </a>
+                    <a href="tentang-kami.html" class="navbar-item">
+                        Tentang Kami
+                    </a>
+                    <a href="blog.html" class="navbar-item">
+                        Blog
+                    </a>
+                    <div class="navbar-item">
+                        <a href="kontak.html" class="button is-primary is-rounded is-small"
+                            style="padding: 1rem 1.5rem;">
+                            Hubungi Kami
+                        </a>
+                    </div>
+                    <div class="navbar-item">
+                        <button id="theme-toggle" class="button is-ghost is-rounded theme-mode-toggle"
+                            aria-label="Toggle theme" style="color: var(--text-main);">
+                            <i class="fas fa-sun" id="theme-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-fullheight-with-navbar pt-6">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-6">
+                        <p class="subtitle is-5 has-text-primary mb-3"><i class="fas fa-rocket mr-1"></i> Elevate Your
+                            Digital Presence</p>
+                        <h1 class="title hero-title">
+                            Bangun Website Impian Anda dengan <span class="text-gradient">ByteAgensi</span>
+                        </h1>
+                        <p class="subtitle is-5 mb-6">
+                            Kami adalah Web Development Agency yang berfokus pada pembuatan website WordPress premium,
+                            cepat, dan siap mengembangkan bisnis Anda ke level berikutnya.
+                        </p>
+                        <div class="buttons">
+                            <a href="layanan.html" class="button is-primary is-medium">Mulai Project Anda</a>
+                            <a href="portfolio.html" class="button is-outlined-custom is-medium">Lihat Portfolio</a>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <figure class="image">
+                            <!-- Placeholder for Hero Image, you can replace this with a generated image or 3D illustration -->
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Web Development"
+                                style="border-radius: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section class="section" id="layanan">
+        <div class="container">
+            <div class="section-header">
+                <p class="has-text-primary font-weight-bold mb-2">LAYANAN KAMI</p>
+                <h2 class="title is-2">Solusi Digital Berbasis WordPress</h2>
+                <p class="subtitle">Berbagai pilihan layanan pembuatan website yang disesuaikan dengan kebutuhan bisnis
+                    Anda.</p>
+            </div>
+
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="glass-card">
+                        <span class="card-icon"><i class="fas fa-laptop-code"></i></span>
+                        <h3 class="title is-4">Website Landing Page</h3>
+                        <p>Halaman tunggal yang didesain khusus untuk kampanye marketing dan
+                            konversi tinggi.</p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="glass-card">
+                        <span class="card-icon"><i class="fas fa-building"></i></span>
+                        <h3 class="title is-4">Website Company Profile</h3>
+                        <p>Tingkatkan kredibilitas perusahaan Anda dengan website
+                            profesional dan elegan.</p>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="glass-card">
+                        <span class="card-icon"><i class="fas fa-store"></i></span>
+                        <h3 class="title is-4">Website Katalog</h3>
+                        <p>Tampilkan produk atau layanan Anda secara menarik dan terstruktur
+                            untuk memikat pelanggan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Klien Kami -->
+    <section class="section" style="background-color: var(--bg-card);">
+        <div class="container has-text-centered">
+            <p class="subtitle is-6 has-text-grey mb-5">DIPERCAYA OLEH PERUSAHAAN, BISNIS UMKM DAN INSTITUSI</p>
+            <div class="columns is-mobile is-multiline is-vcentered is-centered">
+                <!-- Using font awesome icons as dummy client logos -->
+                <!-- <div class="column is-half-mobile is-one-fifth-desktop"><i class="fab fa-amazon client-logo fa-3x"></i>
+                </div>
+                <div class="column is-half-mobile is-one-fifth-desktop"><i class="fab fa-google client-logo fa-3x"></i>
+                </div>
+                <div class="column is-half-mobile is-one-fifth-desktop"><i class="fab fa-spotify client-logo fa-3x"></i>
+                </div>
+                <div class="column is-half-mobile is-one-fifth-desktop"><i class="fab fa-slack client-logo fa-3x"></i>
+                </div>
+                <div class="column is-half-mobile is-one-fifth-desktop"><i
+                        class="fab fa-microsoft client-logo fa-3x"></i></div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How we work -->
+    <section class="section" id="how-we-work">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-5">
+                    <div class="pr-6">
+                        <p class="has-text-primary font-weight-bold mb-2">PROSES KAMI</p>
+                        <h2 class="title is-2 mb-4">Bagaimana Cara Kami Bekerja?</h2>
+                        <p class="subtitle mb-6">Kami memiliki alur kerja yang jelas dan transparan untuk memastikan
+                            proyek Anda selesai tepat waktu dan sesuai harapan.</p>
+                        <a href="kontak.html" class="button is-primary">Mulai Konsultasi</a>
+                    </div>
+                </div>
+                <div class="column is-6 is-offset-1">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <h4 class="title is-5 mb-2">Konsultasi dengan tim kami</h4>
+                        <p>Kami berdiskusi untuk memahami kebutuhan, tujuan, dan visi bisnis
+                            Anda secara mendetail.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <h4 class="title is-5 mb-2">Pilih domain yang tersedia</h4>
+                        <p>Tim kami membantu mencarikan dan mendaftarkan nama domain terbaik
+                            untuk identitas online Anda.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <h4 class="title is-5 mb-2">Pilih tema website</h4>
+                        <p>Pemilihan desain antarmuka yang modern, responsif, dan
+                            mencerminkan brand Anda.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <h4 class="title is-5 mb-2">Website launch</h4>
+                        <p>Setelah pengembangan dan pengujian selesai, website Anda siap
+                            diluncurkan dan diakses oleh dunia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Post -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title is-2">Portfolio Project</h2>
+                <p class="subtitle">Lihat beberapa karya terbaik kami yang telah membantu klien mencapai target bisnis
+                    mereka.</p>
+            </div>
+
+            <div class="columns is-multiline">
+                <!-- Project 1 -->
+                <div class="column is-4">
+                    <div class="glass-card p-0 overflow-hidden" style="padding: 0 !important; overflow: hidden;">
+                        <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Tech Startup Landing Page"
+                                style="object-fit: cover; transition: transform 0.5s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                        </figure>
+                        <div class="p-5">
+                            <h3 class="title is-4 mb-2">Tech Startup XYZ</h3>
+                            <p class="mb-4">Pembuatan landing page untuk aplikasi SaaS startup
+                                teknologi.</p>
+                            <a href="#" class="button is-outlined-success is-fullwidth">Kunjungi Website &nbsp;<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="column is-4">
+                    <div class="glass-card p-0 overflow-hidden" style="padding: 0 !important; overflow: hidden;">
+                        <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Corporate Architecture" style="object-fit: cover; transition: transform 0.5s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                        </figure>
+                        <div class="p-5">
+                            <h3 class="title is-4 mb-2">ArchiBuild Global</h3>
+                            <p class="mb-4">Website profil perusahaan untuk firma arsitektur
+                                internasional.</p>
+                            <a href="#" class="button is-outlined-success is-fullwidth">Kunjungi Website &nbsp;<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="column is-4">
+                    <div class="glass-card p-0 overflow-hidden" style="padding: 0 !important; overflow: hidden;">
+                        <figure class="image is-4by3">
+                            <img src="https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Beauty Shop" style="object-fit: cover; transition: transform 0.5s ease;"
+                                onmouseover="this.style.transform='scale(1.1)'"
+                                onmouseout="this.style.transform='scale(1)'">
+                        </figure>
+                        <div class="p-5">
+                            <h3 class="title is-4 mb-2">Glow Beauty Shop</h3>
+                            <p class="mb-4">Website katalog produk kecantikan dengan integrasi
+                                pemesanan WhatsApp.</p>
+                            <a href="#" class="button is-outlined-success is-fullwidth">Kunjungi Website &nbsp;<i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="has-text-centered mt-6">
+                <button class="button is-primary">Lihat Project Lainnya</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title is-2">Pertanyaan yang Sering Diajukan</h2>
+                <p class="subtitle">FAQ (Frequently Asked Questions)</p>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4 class="title is-5 mb-0">Berapa lama waktu pembuatan website?</h4>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Waktu pembuatan website bervariasi tergantung pada
+                                    kompleksitas proyek. Umumnya, website landing page membutuhkan waktu 1-2 minggu,
+                                    sementara website company profile atau katalog bisa memakan waktu 3-4 minggu.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4 class="title is-5 mb-0">Apakah website yang dibuat mobile-friendly?</h4>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Tentu saja. Semua website yang kami kembangkan dijamin
+                                    responsif, yang berarti akan tampil optimal di berbagai perangkat, baik desktop,
+                                    tablet, maupun smartphone.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h4 class="title is-5 mb-0">Apakah ada layanan maintenance setelah website selesai?</h4>
+                                <span class="accordion-icon"><i class="fas fa-plus"></i></span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>Ya, kami menyediakan layanan maintenance opsional untuk
+                                    memastikan website Anda selalu update, aman dari ancaman keamanan, dan performanya
+                                    tetap optimal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(139,92,246,0.1));">
+        <div class="container has-text-centered">
+            <h2 class="title is-2 mb-4">Siap untuk Memulai Project Anda?</h2>
+            <p class="subtitle is-5 mb-6">Mari berkolaborasi dan wujudkan website impian Anda bersama kami.</p>
+            <a href="kontak.html" class="button is-primary is-large">Hubungi Kami Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="navbar-brand">
+                        <span class="navbar-item px-0">
+                            <img src="/assets/images/ByteAgensi-logo.png" class="mr-2" />
+                            <span>ByteAgensi</span>
+                        </span>
+                    </div>
+                    <p class="mb-4">Web Development Agency profesional yang berfokus pada pembuatan website WordPress
+                        premium, cepat, dan modern.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="column is-2 is-offset-2">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li class="mb-2"><a href="tentang-kami.html">Tentang Kami</a></li>
+                        <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="kontak.html">Karir</a></li>
+                    </ul>
+                </div>
+                <div class="column is-2">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li class="mb-2"><a href="layanan.html">Landing Page</a></li>
+                        <li class="mb-2"><a href="layanan.html">Company Profile</a></li>
+                        <li class="mb-2"><a href="layanan.html">Katalog</a></li>
+                        <li class="mb-2"><a href="layanan.html">HTML to WP</a></li>
+                    </ul>
+                </div>
+                <div class="column is-2">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li class="mb-2"><a href="kontak.html">Hubungi Kami</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="syarat-ketentuan.html">Syarat & Ketentuan</a></li>
+                        <li class="mb-2"><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top mt-6 pt-5 has-text-centered" style="border-top: 1px solid var(--border-color);">
+                <p>&copy; 2026 ByteAgensi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

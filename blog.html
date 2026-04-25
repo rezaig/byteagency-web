@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Insight - ByteAgensi</title>
+    <meta name="description"
+        content="Kumpulan artikel dan insight terbaru seputar web development, desain, dan WordPress.">
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets//images//ByteAgensi-facicon.ico">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="/assets/images/ByteAgensi-logo.png" class="mr-2" />
+                    <span>ByteAgensi</span>
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <div class="navbar-link-wrapper">
+                            <a href="layanan.html" class="navbar-link">
+                                    Layanan Kami
+                            </a>
+                            <span class="dropdown-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <div class="navbar-dropdown">
+                            <a href="layanan.html" class="navbar-item">
+                                Website Company Profile
+                            </a>
+                            <a href="layanan.html" class="navbar-item">
+                                Website Landing Page
+                            </a>
+                            <a href="layanan.html" class="navbar-item">
+                                Website Katalog
+                            </a>
+                        </div>
+                    </div>
+                    <a href="harga.html" class="navbar-item">
+                        Harga &amp; Paket
+                    </a>
+                    <a href="portfolio.html" class="navbar-item">
+                        Portfolio
+                    </a>
+                    <a href="tentang-kami.html" class="navbar-item">
+                        Tentang Kami
+                    </a>
+                    <a href="blog.html" class="navbar-item">
+                        Blog
+                    </a>
+                    <div class="navbar-item">
+                        <a href="kontak.html" class="button is-primary is-rounded is-small"
+                            style="padding: 1rem 1.5rem;">
+                            Hubungi Kami
+                        </a>
+                    </div>
+                    <div class="navbar-item">
+                        <button id="theme-toggle" class="button is-ghost is-rounded theme-mode-toggle"
+                            aria-label="Toggle theme" style="color: var(--text-main);">
+                            <i class="fas fa-sun" id="theme-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero is-medium pt-6"
+        style="background: linear-gradient(to bottom, var(--bg-dark), var(--navbar-bg));">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1 mb-4">Blog & <span class="text-gradient">Insight</span></h1>
+                <p class="subtitle is-5 max-w-600 mx-auto" style="max-width: 600px; margin: 0 auto;">Temukan artikel
+                    terbaru, tutorial, dan tips seputar pengembangan website dan WordPress.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <!-- Blog Post 1 -->
+                <div class="column is-4">
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Image" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt"></i> 10 Oct 2026</span>
+                            </div>
+                            <h3 class="title is-4 mb-3">Pentingnya Kecepatan Website untuk SEO</h3>
+                            <p class="mb-4">Cari tahu mengapa kecepatan loading website sangat
+                                berpengaruh terhadap peringkat di Google dan kepuasan pengunjung...</p>
+                            <a href="#" class="has-text-primary has-text-weight-bold">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="column is-4">
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Image" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt"></i> 05 Oct 2026</span>
+                            </div>
+                            <h3 class="title is-4 mb-3">Tips Memilih Tema WordPress yang Tepat</h3>
+                            <p class="mb-4">Panduan lengkap memilih tema yang responsif dan
+                                seo-friendly untuk bisnis Anda agar tidak menyesal di kemudian hari...</p>
+                            <a href="#" class="has-text-primary has-text-weight-bold">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="column is-4">
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Image" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt"></i> 28 Sep 2026</span>
+                            </div>
+                            <h3 class="title is-4 mb-3">Trend Web Design di Tahun Ini</h3>
+                            <p class="mb-4">Mengetahui trend desain website terbaru untuk membuat
+                                tampilan situs Anda lebih modern dan memikat pengunjung...</p>
+                            <a href="#" class="has-text-primary has-text-weight-bold">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Blog Post 4 -->
+                <div class="column is-4">
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Image" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt"></i> 15 Sep 2026</span>
+                            </div>
+                            <h3 class="title is-4 mb-3">Meningkatkan Keamanan Website WordPress</h3>
+                            <p class="mb-4">Langkah-langkah esensial untuk melindungi website
+                                WordPress Anda dari serangan hacker dan malware berbahaya...</p>
+                            <a href="#" class="has-text-primary has-text-weight-bold">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Blog Post 5 -->
+                <div class="column is-4">
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Image" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt"></i> 02 Sep 2026</span>
+                            </div>
+                            <h3 class="title is-4 mb-3">Pentingnya Maintenance Website Berkala</h3>
+                            <p class="mb-4">Mengapa sekadar membuat website saja tidak cukup?
+                                Ketahui pentingnya pemeliharaan website secara rutin...</p>
+                            <a href="#" class="has-text-primary has-text-weight-bold">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Blog Post 6 -->
+                <div class="column is-4">
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Blog Image" class="blog-card-image">
+                        <div class="blog-card-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt"></i> 20 Aug 2026</span>
+                            </div>
+                            <h3 class="title is-4 mb-3">Cara Memilih Hosting Terbaik untuk WordPress</h3>
+                            <p class="mb-4">Panduan lengkap memilih penyedia layanan hosting yang
+                                cepat, aman, dan dapat diandalkan untuk website Anda...</p>
+                            <a href="#" class="has-text-primary has-text-weight-bold">Baca Selengkapnya</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="pagination is-centered mt-6" role="navigation" aria-label="pagination">
+                <a class="pagination-previous" disabled>Previous</a>
+                <a class="pagination-next">Next page</a>
+                <ul class="pagination-list">
+                    <li><a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a></li>
+                    <li><a class="pagination-link" aria-label="Goto page 2">2</a></li>
+                    <li><a class="pagination-link" aria-label="Goto page 3">3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="navbar-brand">
+                        <span class="navbar-item px-0">
+                            <img src="/assets/images/ByteAgensi-logo.png" class="mr-2" />
+                            <span>ByteAgensi</span>
+                        </span>
+                    </div>
+                    <p class="mb-4">Web Development Agency profesional yang berfokus pada pembuatan website WordPress
+                        premium, cepat, dan modern.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="column is-2 is-offset-2">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li class="mb-2"><a href="tentang-kami.html">Tentang Kami</a></li>
+                        <li class="mb-2"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="kontak.html">Karir</a></li>
+                    </ul>
+                </div>
+                <div class="column is-2">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li class="mb-2"><a href="layanan.html">Landing Page</a></li>
+                        <li class="mb-2"><a href="layanan.html">Company Profile</a></li>
+                        <li class="mb-2"><a href="layanan.html">Katalog</a></li>
+                        <li class="mb-2"><a href="layanan.html">HTML to WP</a></li>
+                    </ul>
+                </div>
+                <div class="column is-2">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li class="mb-2"><a href="kontak.html">Hubungi Kami</a></li>
+                        <li class="mb-2"><a href="#">FAQ</a></li>
+                        <li class="mb-2"><a href="syarat-ketentuan.html">Syarat & Ketentuan</a></li>
+                        <li class="mb-2"><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top mt-6 pt-5 has-text-centered" style="border-top: 1px solid var(--border-color);">
+                <p>&copy; 2026 ByteAgensi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
