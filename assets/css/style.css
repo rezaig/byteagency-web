@@ -363,6 +363,37 @@ h1, h2, h3, h4, h5, h6, .title, .subtitle, strong {
   gap: 10px;
 }
 
+/* Forms */
+.label {
+  color: var(--text-main);
+}
+
+.input, .textarea, .select select {
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+  color: var(--text-main);
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.input::placeholder, .textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.input:focus, .textarea:focus, .select select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.125em rgba(59, 130, 246, 0.25);
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: var(--text-main);
+}
+
+.select select option {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+}
+
 /* Footer */
 .footer {
   background-color: var(--footer-bg);
