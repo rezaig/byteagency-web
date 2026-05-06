@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
   --primary-color: #3b82f6;
@@ -12,7 +13,7 @@
   --text-main: #0f172a;
   --text-muted: #475569;
   --border-color: #e2e8f0;
-  --navbar-bg: rgba(255, 255, 255, 0.8);
+  --navbar-bg: rgba(255, 255, 255, 1);
   --footer-bg: #ffffff;
   --hero-gradient-1: rgba(59, 130, 246, 0.1);
   --hero-gradient-2: rgba(139, 92, 246, 0.1);
@@ -49,6 +50,10 @@ h1, h2, h3, h4, h5, h6, .title, .subtitle, strong {
   color: var(--text-main) !important;
   font-weight: 700;
   letter-spacing: -0.02em;
+}
+
+h1, h2, h3 {
+  font-family: 'Rubik', sans-serif;
 }
 
 .subtitle {
@@ -117,6 +122,7 @@ h1, h2, h3, h4, h5, h6, .title, .subtitle, strong {
   border: 1px solid var(--border-color) !important;
   border-top: 2px solid var(--primary-color) !important;
   box-shadow: var(--card-shadow) !important;
+  font-size: 1rem;
 }
 
 .navbar-dropdown a.navbar-item:hover {
@@ -138,6 +144,7 @@ h1, h2, h3, h4, h5, h6, .title, .subtitle, strong {
 .theme-mode-toggle {
   width: 3rem;
   padding: 0 !important;
+  border: 1px solid var(--border-color) !important;
 }
 .theme-mode-toggle:hover {
   text-decoration: none !important;
@@ -517,4 +524,54 @@ h1, h2, h3, h4, h5, h6, .title, .subtitle, strong {
   .navbar-item.has-dropdown.is-active .dropdown-toggle i {
     transform: rotate(180deg);
   }
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.1) translateY(-5px);
+  color: white;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+}
+
+.floating-whatsapp::before {
+  content: 'Hubungi Kami via WhatsApp';
+  position: absolute;
+  right: 80px;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border: 1px solid var(--border-color);
+  pointer-events: none;
+}
+
+[data-theme="dark"] .floating-whatsapp::before {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  background-color: var(--bg-dark);
 }
